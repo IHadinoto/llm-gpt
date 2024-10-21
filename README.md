@@ -81,35 +81,35 @@ Running the Code
 1.  Clone the repository or download the `wizard_of_oz.txt` file from the provided link.
 2.  Run the script in a PyTorch-compatible environment:
 
-    bash
 
-    Copy code
-
-    `python your_script_name.py`
+```
+    # bash
+    python your_script_name.py
+```
 
 3.  Monitor the training process by tracking the losses and output.
 4.  Use the `generate` function to generate text after training:
 
-    python
+```
+    # python
 
-    Copy code
-
-    `prompt = 'Hello!'
+    prompt = 'Hello!'
     context = torch.tensor(encode(prompt), dtype=torch.long, device=device)
     generated_chars = decode(m.generate(context.unsqueeze(0), max_new_tokens=100)[0].tolist())
-    print(generated_chars)`
+    print(generated_chars)
+```
 
 Example Output
 --------------
 
-text
+```
+# text
 
-Copy code
-
-`Hello! Can you see me?
+Hello! Can you see me?
 ""
 "So he hasken the mountain top of the Mangaboos."
-"Wolld you sup sin what yo...`
+"Wolld you sup sin what yo...
+```
 
 Notes
 -----
